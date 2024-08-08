@@ -13,7 +13,7 @@ app.use(cors());
 
 const mongoURI:string = "mongodb+srv://Engr_Anthony:mfzcbH6y11L1OlCh@fintrack.vdfmgrx.mongodb.net/";
 
-mongoose.connect(mongoURI).then(() => console.log("CONNECTED TO MONGODB!")).catch((err) => console.error("FAILED TO CONNECT TO MONGODB:", err));
+mongoose.connect(mongoURI).then(() => console.log("CONNECTED TO MONGoDB!")).catch((err) => console.error("FAILED TO CONNECT TO MONGODB:", err));
 
 app.use("/financial-records", financialRecordRouter);
 
