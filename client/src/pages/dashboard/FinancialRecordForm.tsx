@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { useUser } from "@clerk/clerk-react";
+import { useFinancialRecords } from "../../contexts/financal-record-context";
 
 const FinancialRecordForm = () => {
   const [description, setDescription] = useState<string>("");
   const [amount, setAmount] = useState<string>("");
   const [category, setCategory] = useState<string>("");
   const [paymentMethod, setPaymentMethod] = useState<string>("");
+  const {addRecord} = useFinancialRecords();
 
   const { user } = useUser();
 
@@ -14,7 +16,7 @@ const FinancialRecordForm = () => {
 
     const newRecord = {
       //generates the set of data fetched from the user on submit. This dataset forms the structure of the database
-      userId: user?.id,
+      userId: user?.id ?? "",
       date: new Date(),
       description: description, //The 'description' value passed to the description variable is coming  from the useState hook updated in real time by the setDescription updater function
       amount: parseFloat(amount), //parseFloat() method converts a string to a float value
@@ -22,8 +24,7 @@ const FinancialRecordForm = () => {
       paymentMethod: paymentMethod,
     };
 
-    //const addRecord(newRecord) /*Adds the generated dataset to the database*/
-
+    addRecord(newRecord) /*Adds the generated dataset to the database*/
     //Reset the input field to empty after new record has been uploaded to the database
     setDescription("");
     setAmount("");
