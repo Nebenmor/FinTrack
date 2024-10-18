@@ -80,7 +80,9 @@ html {
   text-align: center;
 }
 
-
+.brand p {
+  font-size: italic;
+}
 
 .greeting {
   font-size: 40px;
