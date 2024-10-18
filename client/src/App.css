@@ -83,8 +83,11 @@ html {
 
 .brand p {
   font-style: italic;
+}
+
+.p-border {
   border: 1px solid white;
-  
+  padding: 5px;
 }
 
 .greeting {
