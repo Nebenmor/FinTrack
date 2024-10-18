@@ -72,7 +72,10 @@ html {
   border-radius: 10px;
   background: #000000;
   color: #ffffff;
+  text-align: center;
 }
+
+
 
 .greeting {
   font-size: 40px;
