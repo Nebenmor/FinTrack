@@ -75,6 +75,11 @@ html {
   text-align: center;
 }
 
+.brand h1, p { 
+  color: #ffffff;
+  text-align: center;
+}
+
 
 
 .greeting {
