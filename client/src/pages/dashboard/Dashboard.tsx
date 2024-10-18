@@ -20,7 +20,8 @@ export const Dashboard = () => {
   }, [records]);
 
   return <div className="className">
-    <h1>Welcome {user?.firstName}! Here Are Your Finances</h1>
+    <h1 className= "brand">FinTrack</h1>
+    <h2 className="greeting">Welcome {user?.firstName}! Here Are Your Finances</h2>
     <FinancialRecordForm />
     <div>Total Monthly: ${totalMothly} </div>
     <FinanacialRecordList />
