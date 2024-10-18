@@ -26,7 +26,7 @@ export const Dashboard = () => {
     </div>
     <h2 className="greeting">Welcome {user?.firstName}! Here Are Your Finances</h2>
     <FinancialRecordForm />
-    <div>Total Monthly: ${totalMothly} </div>
+    <div>Total Monthly income: ${totalMothly} </div>
     <FinanacialRecordList />
     <Auth />
   </div>
