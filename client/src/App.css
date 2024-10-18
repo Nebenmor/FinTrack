@@ -82,7 +82,9 @@ html {
 }
 
 .brand p {
-  font-size: italic;
+  font-style: italic;
+  border: 1px solid white;
+  
 }
 
 .greeting {

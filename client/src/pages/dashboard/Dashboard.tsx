@@ -21,8 +21,8 @@ export const Dashboard = () => {
 
   return <div className="className">
     <div className="brand" >
-    <h1>FinTrack</h1>
-    <p>Let's help you track your expenses</p>
+      <h1>FinTrack</h1>
+      <p>Let's help you track your expenses</p>
     </div>
     <h2 className="greeting">Welcome {user?.firstName}! Here Are Your Finances</h2>
     <FinancialRecordForm />
