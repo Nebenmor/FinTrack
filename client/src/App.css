@@ -73,6 +73,7 @@ html {
   background: #000000;
   color: #ffffff;
   text-align: center;
+  margin-top: 10px;
 }
 
 .brand h1, p { 
